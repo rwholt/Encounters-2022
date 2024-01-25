@@ -1,2 +1,2 @@
-# portfolio
-Explanation and Postgres SQL code for my Data Analyst portfolio.
+# Portfolio
+Explanation and SQL code for my Data Analyst portfolio.
