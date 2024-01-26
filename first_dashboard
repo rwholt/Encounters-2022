@@ -22,7 +22,7 @@ Most Common Encounter Reasons
 */ 
 
 
-with icd_crosswalk as  --CTE that shows Ooerall numbers of encounter types 
+with icd_crosswalk as  				--CTE that shows Ooerall numbers of encounter types 
 
 (
   select distinct description,
@@ -46,7 +46,7 @@ covid as
 	     date,
 	     row_number() over (partition by patient order by date asc) as seq
   from postgres.public.immunizations
-  where lower(description) like '%covid%' -- this wildcard searches everything covid
+  where lower(description) like '%covid%' 	-- this wildcard searches everything covid
 ),
 
 covid_final as
