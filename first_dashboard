@@ -1,9 +1,29 @@
 /*
 Objectives
+Request 2022 data: 
 
+Overall numbers of encounter types 
+
+Pay distribution for the different payor types 
+
+% of patients who had full covid immunity (2 shots) BEFORE the encounter 
+
+% of patients who had full flu immunity (1 seasonal shot) BEFORE the encounter 
+
+Base cost for the hospital per encounter type 
+
+Median Time of the encounter 
+
+Average LOS 
+
+Age distribution 
+
+Most Common Encounter Reasons 
 */ 
 
-with icd_crosswalk as
+
+with icd_crosswalk as  --CTE that shows Ooerall numbers of encounter types 
+
 (
   select distinct description,
          code
@@ -26,8 +46,7 @@ covid as
 	     date,
 	     row_number() over (partition by patient order by date asc) as seq
   from postgres.public.immunizations
-  where 1=1 
-	and lower(description) like '%covid%'
+  where lower(description) like '%covid%' -- this wildcard searches everything covid
 ),
 
 covid_final as
@@ -61,15 +80,15 @@ select enc.id as encounter_id,
 	   pat.ethnicity,
 	   pat.id as patient_id
 from postgres.public.encounters as enc
-left join postgres.public.payers as pay
+left join postgres.public.payers as pay		--Join grants access to determine pay distribution for the different payor types 
   on enc.payer = pay.id
-left join postgres.public.patients as pat
+left join postgres.public.patients as pat	--Join grants access to determine age distribution 
   on enc.patient = pat.id
-join icd_crosswalk as icd
+join icd_crosswalk as icd			--Join grants access to CTE name icd to determine icd code and description
   on enc.reasoncode = icd.code
-left join flu
+left join flu					--Join grants access to determine % of patients who had full flu immunity (1 seasonal shot) BEFORE the encounter 
   on enc.patient = flu.patient
-left join covid_final as cov
+left join covid_final as cov			--Join grants access to determine % of patients who had full covid immunity (2 shots) BEFORE the encounter 
   on enc.patient = cov.patient
 where enc.stop >= '2022-01-01 00:00'
   and enc.stop <  '2023-01-01 00:00'
