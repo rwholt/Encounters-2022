@@ -137,18 +137,16 @@ where enc.stop >= '2022-01-01 00:00'
 ### Results and Findings
 ---
 The analysis results are summarized as follows:
-1.
-2.
-3.
+1. Outpatient encounters cost the hospital the most money.
+2. Over 87% of patients admitted into the hospital have recieve flu and both covid shots.
+3. The average length of stay for patients that go to the ER is 1 hr.
+4. Outpatient receives over 3k+ patients.
+5. The top reason is "Patient with a problem" from the Outpatient department.
 
 
 ### Recommendations
 ---
 
 Based on the analysis, we reccomend the following actions
--
--
--
+- Increase staff to meet the patient demand in the summer time for the ER.
 
-
--
