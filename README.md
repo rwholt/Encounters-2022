@@ -9,22 +9,22 @@
 - [Data Analysis](#data-analysis)
 - [Results and Findings](#results-and-findings)
 - [Recommendations](#recommendations)
-### Project Overview
+### **Project Overview**
 ---
 This data analysis project aims to provide insights into the hospital patient encounters for the year 2022. By analyzing various aspects of the hospital encounters data, week to identify trends, make data-driven reccomendations, and gain a deeper understanding of the hospital performance.
 ![image](https://github.com/rwholt/Encounters-2022/assets/130107486/07277f6f-9755-453b-94a5-f613fa4b0b05)
 
-### Data Source
+### **Data Source**
 ---
 Hospital Data: The primary dataset used for this analysis is the Synthea patient records, which contains over 6 million fake patients records.
 
-### Tools
+### **Tools**
 ---
 - PostgreSQL -Data Analysis
 - Tableau - Creating report
 
 
-### Exploratory Data Analysis
+### **Exploratory Data Analysis**
 ---
  - How much are patients costing the hospital durning an encounter?
  - Has the patient had their flu shots?
@@ -35,7 +35,7 @@ Hospital Data: The primary dataset used for this analysis is the Synthea patient
  - What are the age groups?
  - What are the most common reasons why patients visit?
 
-### Data Analysis
+### **Data Analysis**
 ---
 ```sql
 /*
@@ -134,7 +134,7 @@ where enc.stop >= '2022-01-01 00:00'
   and enc.stop <  '2023-01-01 00:00'
 ```
 
-### Results and Findings
+### **Results and Findings**
 ---
 The analysis results are summarized as follows:
 1. Outpatient encounters cost the hospital the most money.
@@ -144,11 +144,11 @@ The analysis results are summarized as follows:
 5. The top reason is "Patient with a problem" from the Outpatient department.
 
 
-### Recommendations
+### **Recommendations**
 ---
 
 Based on the analysis, we reccomend the following actions
-## ER
+### ER
 - **Narrative for Encounter 2022 Dashboard**
 
 This dashboard presents a comprehensive overview of emergency encounters throughout 2022, tracking key metrics such as average duration, patient count, cost, and payer distribution, as well as COVID-19 immunity status among patients. A notable trend is the fluctuation in average emergency encounter duration, peaking in July and December. This data is pivotal for identifying bottlenecks and improving patient flow. The median emergency time stands at 60 minutes, with 764 unique patients encountered, indicating a substantial demand on emergency services.
@@ -167,7 +167,7 @@ The financial aspect is represented in the "Number of Emergency Encounters vs Ba
 
 5. **Types of Emergency Encounters**: Address the high number of Obstetrics Emergency encounters by evaluating obstetrics care processes and patient education programs. Explore whether these emergencies can be reduced through better prenatal care or early intervention strategies.
 
-## Inpatient
+### **Inpatient**
 - **Narrative for Inpatient Encounter 2022 Dashboard**
 
 The Inpatient Encounter 2022 Dashboard presents key metrics that detail the inpatient care landscape over the course of the year. With a median inpatient stay of approximately 3.5 days, the facility served 108 unique patients, indicating a focused yet significant impact on the healthcare system. The payer mix is heavily dominated by Medicare, which covers nearly half of the inpatient encounters, reflecting the patient demographic likely skewed towards older adults or those with certain disabilities. The data also shows an impressive 87% of encounters involved patients with full COVID immunity, suggesting a high rate of vaccination or previous infection among this patient group.
@@ -186,7 +186,7 @@ The Average Days in Inpatient Encounter graph indicates a variable length of sta
 
 5. **COVID-19 Immunity and Infection Control**: Given the high percentage of fully immune patients, continue to prioritize infection control measures to protect both patients and staff, particularly as new variants emerge. Additionally, maintain robust data on immunity rates as this impacts staffing requirements, isolation room availability, and PPE usage.
 
-## Outpatient
+### **Outpatient**
 -**Narrative for Outpatient Encounter 2022 Dashboard**
 
 The Outpatient Encounter 2022 Dashboard illustrates various metrics regarding outpatient services throughout the year. With over 3,000 unique patients and a median visit duration of 123 minutes, the department seems to handle a substantial outpatient volume with considerable time per visit. The average minutes in outpatient encounters have remained relatively consistent, with minor fluctuations throughout the year, indicating a stable process in managing outpatient visits.
