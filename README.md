@@ -14,6 +14,11 @@
 This data analysis project aims to provide insights into the hospital patient encounters for the year 2022. By analyzing various aspects of the hospital encounters data, week to identify trends, make data-driven reccomendations, and gain a deeper understanding of the hospital performance. Click <a href="https://public.tableau.com/app/profile/reginald.holt/viz/Encounter2022Dashboard/Dashboard3" style="color: #FF5733;">here</a> to view the dashboard.
 
 
+![image](https://github.com/rwholt/Encounters-2022/assets/130107486/66050f0d-7582-4029-adcc-bf169c01e146)
+
+
+
+
 ### **Data Source**
 ---
 Hospital Data: The primary dataset used for this analysis is the Synthea patient records, which contains over 6 million fake patients records.
@@ -141,7 +146,7 @@ The analysis results are summarized as follows:
 2. Over 87% of patients admitted into the hospital have recieve flu and both covid shots.
 3. The average length of stay for patients that go to the ER is 1 hr.
 4. Outpatient receives over 3k+ patients.
-5. The top reason is "Patient with a problem" from the Outpatient department.
+5. The top reason for a hospital visit is "Patient with a problem" from the Outpatient department.
 
 
 ### **Recommendations**
@@ -187,7 +192,7 @@ The Average Days in Inpatient Encounter graph indicates a variable length of sta
 5. **COVID-19 Immunity and Infection Control**: Given the high percentage of fully immune patients, continue to prioritize infection control measures to protect both patients and staff, particularly as new variants emerge. Additionally, maintain robust data on immunity rates as this impacts staffing requirements, isolation room availability, and PPE usage.
 
 ### **Outpatient**
--**Narrative for Outpatient Encounter 2022 Dashboard**
+- **Narrative for Outpatient Encounter 2022 Dashboard**
 
 The Outpatient Encounter 2022 Dashboard illustrates various metrics regarding outpatient services throughout the year. With over 3,000 unique patients and a median visit duration of 123 minutes, the department seems to handle a substantial outpatient volume with considerable time per visit. The average minutes in outpatient encounters have remained relatively consistent, with minor fluctuations throughout the year, indicating a stable process in managing outpatient visits.
 
