@@ -11,8 +11,8 @@
 - [Recommendations](#recommendations)
 ### **Project Overview**
 ---
-This data analysis project aims to provide insights into the hospital patient encounters for the year 2022. By analyzing various aspects of the hospital encounters data, week to identify trends, make data-driven reccomendations, and gain a deeper understanding of the hospital performance.
-![image](https://github.com/rwholt/Encounters-2022/assets/130107486/07277f6f-9755-453b-94a5-f613fa4b0b05)
+This data analysis project aims to provide insights into the hospital patient encounters for the year 2022. By analyzing various aspects of the hospital encounters data, week to identify trends, make data-driven reccomendations, and gain a deeper understanding of the hospital performance. Click <a href="https://public.tableau.com/app/profile/reginald.holt/viz/Encounter2022Dashboard/Dashboard3" style="color: #FF5733;">here</a> to view the dashboard.
+
 
 ### **Data Source**
 ---
